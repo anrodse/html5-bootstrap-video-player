@@ -1,0 +1,40 @@
+/*
+ * Bootstrap video player
+ * A customizable HTML5 video player plugin for jQuery based on bootstrap UI
+ * version:1.0   
+ * Author:zied.hosni.mail@gmail.com 
+ * 2012 © html5-ninja.com
+ * 2012-09-26
+ */
+
+.videoWrapper {width:100%; height:100%; position:relative;}
+.videoWrapper video { background:#000; }
+.video-control { background:#333; width:100%; height:44px; z-index:2147483647; opacity:0.5; position:absolute; bottom:4px; }
+.video-control:hover { opacity:0.9; }
+
+/* Progress bar */
+.video-control .vid-progress { position:relative; height:6px; background:#408; margin:2px 5px 4px; }
+.video-control .vid-progress .vbar { height:100%; position:absolute; left:0; top:0; background:#aaa; transition:width 0.1s ease 0s; }
+.video-control .vid-progress .vbar.bufferBar  { opacity:0.2; }
+.video-control .vid-progress .vbar.progressBar  { opacity:0.4; }
+
+.video-control .pnControl { height:30px; padding:2px; }
+.video-control .pnControl { color:#fff !important; }
+
+.player-btn { margin:0 10px; font-size:22px; line-height:normal; cursor:pointer; line-height:22px; }
+
+/* left controls */
+.video-control .pnControl .playMedia { float:left; }
+.video-control .pnControl .mute { float:left; }
+.video-control .pnControl .volumeSlider { float:left; height:100%; width:80px; position:relative; }
+.video-control .pnControl .volumeSlider .volumeBar { position:absolute; top:25%; width:100%; height:50%; background:#222;
+			border-width: 1px; border-style: solid; border-color: #222 #222 #555 #222; border-radius: 25px; }
+.video-control .pnControl .volumeSlider .volumeBar .volumeValue { height:100%; background:#ffffff; border-radius:25px; }
+.video-control .pnControl .timer { float:left; text-align:right; padding:0 5px; font-size:0.8em; }
+
+/* right controls */
+.video-control .pnControl .audio { float:right; }
+.video-control .pnControl .video { float:right; }
+.video-control .pnControl .subtitles { float:right; }
+.video-control .pnControl .fullscreen { float:right; }
+
